@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "description": "a mini game",
   "main": "index.js",
+  "browsersList": [
+    "defaults"
+  ],
   "scripts": {
+    "watch": "webpack --watch --mode=development",
+    "build": "webpack --mode=production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,8 +24,14 @@
   "dependencies": {
     "@babel/core": "^7.21.4",
     "@babel/preset-env": "^7.21.4",
+    "babel-loader": "^9.1.2",
     "core-js": "^3.29.1",
     "css-loader": "^6.7.3",
-    "mini-css-extract-plugin": "^2.7.5"
+    "mini-css-extract-plugin": "^2.7.5",
+    "sass": "^1.60.0",
+    "sass-loader": "^13.2.2"
+  },
+  "devDependencies": {
+    "webpack-cli": "^5.0.1"
   }
 }
