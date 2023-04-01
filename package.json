@@ -1,0 +1,26 @@
+{
+  "name": "balloon-destroyer",
+  "version": "1.0.0",
+  "description": "a mini game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/HizkiasAbraham/balloon-destroyer.git"
+  },
+  "author": "Hizkias Abraham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HizkiasAbraham/balloon-destroyer/issues"
+  },
+  "homepage": "https://github.com/HizkiasAbraham/balloon-destroyer#readme",
+  "dependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "core-js": "^3.29.1",
+    "css-loader": "^6.7.3",
+    "mini-css-extract-plugin": "^2.7.5"
+  }
+}
