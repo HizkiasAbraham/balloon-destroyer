@@ -9,6 +9,7 @@ const config = {
   output: {
     path: path.join(__dirname, 'dist'),
     filename: '[name].js',
+    assetModuleFilename: 'images/[name][ext]'
   },
   plugins: [new MiniCssExtractPlugin()],
   module: {
@@ -28,6 +29,10 @@ const config = {
           },
           'sass-loader',
         ],
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
       },
     ],
   },

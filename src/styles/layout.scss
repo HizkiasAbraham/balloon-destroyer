@@ -1,0 +1,49 @@
+body {
+  background-color: rgb(201, 245, 245);
+}
+
+.title {
+  text-align: center;
+  color: green;
+}
+
+.container {
+  display: flex;
+}
+
+.container-left {
+  display: flex;
+  flex: 1;
+}
+
+.container-right {
+  display: flex;
+  flex: 4;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex-div {
+  display: flex;
+}
+
+.flex-div-item {
+  flex: 1;
+  margin: 1%;
+}
+
+.change-background-img {
+  height: 50px;
+  width: 50px;
+}
+
+.hoverable {
+  cursor: pointer;
+}
+
+#game_canvas {
+  height: 100%;
+  width: 100%;
+}
