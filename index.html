@@ -12,7 +12,6 @@
   <body>
     <div class="title">
       <h1>Balloon Shooter</h1>
-      <hr />
     </div>
     <div class="container">
       <div class="container-left">
@@ -21,13 +20,7 @@
           <hr />
           <h5>Change game background:</h5>
           <div class="flex-div">
-            <div class="flex-div-item hoverable">
-              <img
-                class="change-background-img"
-                src="./dist/images/1.jpg"
-                id="bg1"
-              />
-            </div>
+
             <div class="flex-div-item hoverable">
               <img
                 class="change-background-img"
@@ -54,8 +47,8 @@
           </div>
         </div>
       </div>
-      <div class="container-right">
-        <canvas id="game_canvas"></canvas>
+      <div id="canvas_container" class="container-right bg1">
+          <canvas id="game_canvas"></canvas>
       </div>
     </div>
   </body>

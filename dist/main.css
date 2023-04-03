@@ -1,1 +1,81 @@
+body {
+  background-color: rgb(201, 245, 245);
+}
 
+.title {
+  text-align: center;
+  color: green;
+}
+
+.container {
+  display: flex;
+}
+
+.container-left {
+  display: flex;
+  flex: 1;
+}
+
+.container-right {
+  display: flex;
+  flex: 4;
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex-div {
+  display: flex;
+}
+
+.flex-div-item {
+  flex: 1;
+  margin: 1%;
+}
+
+.change-background-img {
+  height: 50px;
+  width: 50px;
+}
+
+.hoverable {
+  cursor: pointer;
+}
+
+.canvas_container {
+  width: 100%;
+  height: max-content;
+}
+
+.bg1 {
+  background-image: url('./images/1.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+.bg2 {
+  background-image: url('./images/2.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+.bg3 {
+  background-image: url('./images/3.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+
+#game_canvas {
+  height: 100%;
+  width: 100%;
+}
+
+
+
+/*# sourceMappingURL=main.css.map*/

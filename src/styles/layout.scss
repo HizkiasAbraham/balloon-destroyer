@@ -19,6 +19,7 @@ body {
 .container-right {
   display: flex;
   flex: 4;
+  justify-content: center;
 }
 
 .text-center {
@@ -42,6 +43,33 @@ body {
 .hoverable {
   cursor: pointer;
 }
+
+.canvas_container {
+  width: 100%;
+  height: max-content;
+}
+
+.bg1 {
+  background-image: url('./images/1.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+.bg2 {
+  background-image: url('./images/2.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+.bg3 {
+  background-image: url('./images/3.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
 
 #game_canvas {
   height: 100%;
