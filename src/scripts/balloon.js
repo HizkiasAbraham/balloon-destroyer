@@ -9,7 +9,7 @@ export class Balloon {
     this.visible = false;
   }
 
-  getIsVisisble() {
+  isVisible() {
     return this.visible;
   }
 
@@ -31,12 +31,6 @@ export class Balloon {
 
   drop(step, canvasHeight = 0) {
     this.y += step;
-    if (!!canvasHeight) {
-      if (this.y >= 0 && this.y <= canvasHeight) {
-        this.visible = true;
-      } else {
-        this.visible = false;
-      }
-    }
+    this.visible = this.y >= BALLOON_RADIUS && this.y <= canvasHeight;
   }
 }

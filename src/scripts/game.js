@@ -22,7 +22,7 @@ export class Game {
     const context = canvas.getContext('2d');
     this.canvas = canvas;
     this.context = context;
-    this.setLives();
+    this.setLivesAndScores();
   }
 
   async run() {
@@ -64,20 +64,34 @@ export class Game {
         if (!this.escaped.includes(balloon.id)) {
           this.escaped.push(balloon.id);
           this.lives--;
-          this.setLives();
+          this.setLivesAndScores();
         }
       }
     }
   }
 
-  setLives() {
+  setLivesAndScores() {
     const lspan = document.getElementById('lives');
+    const sspan = document.getElementById('score');
     lspan.innerHTML = this.lives <= 0 ? 0 : this.lives;
+    sspan.innerHTML = this.score;
   }
+
+  onKeyEntered(keyValue) {
+    const indexOfKey = this.balloons.findIndex(
+      (e) => e.value.toLowerCase() === keyValue && e.isVisible(),
+    );
+    if (indexOfKey != -1) {
+      this.balloons.splice(indexOfKey, 1);
+      this.score += 10;
+      this.setLivesAndScores()
+    }
+  }
+
   generateBalloons() {
     const { width, height } = this.canvas;
 
-    for (let i = 0; i < 2; i++) {
+    for (let i = 0; i < NUMBER_OF_BALLOONS; i++) {
       const x = getRandomInt(2 * BALLOON_RADIUS, width - 2 * BALLOON_RADIUS);
       let y = 0;
       if ((i + 1) % 10 === 0) {
