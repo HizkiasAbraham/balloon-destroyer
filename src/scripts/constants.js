@@ -4,11 +4,12 @@ export const DIFFICULTIES = {
   HARD: 1.4,
 };
 
-export const NUMBER_OF_BALLOONS = 8;
+export const NUMBER_OF_BALLOONS = 5;
 export const BALLOON_RADIUS = 6;
 export const BALLOON_FILL_COLOR = 'yellow';
 export const BALLOON_TEXT_FONT = '0.6em Georgia';
 export const BALLOON_TEXT_FILL_COLOR = 'red';
+export const NUMBER_OF_LIVES = 5;
 
 export const WORD_LETTERS = [
   'A',
