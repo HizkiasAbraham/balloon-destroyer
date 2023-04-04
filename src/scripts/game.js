@@ -10,7 +10,7 @@ import {
 } from './constants';
 
 export class Game {
-  constructor(difficulty) {
+  constructor(difficulty, prevScore) {
     this.lives = NUMBER_OF_LIVES;
     this.time = 0;
     this.score = 0;
@@ -18,7 +18,7 @@ export class Game {
     this.difficulty = difficulty;
     this.escaped = [];
     this.gameEnded = false;
-
+    this.prevScore = prevScore;
     const canvas = document.getElementById('game_canvas');
     const context = canvas.getContext('2d');
     this.canvas = canvas;
@@ -39,7 +39,7 @@ export class Game {
       await sleep(100);
       this.time += 100;
     }
-    this.gameEnded = true
+    this.gameEnded = true;
     this.finishGame();
   }
 
@@ -142,6 +142,8 @@ export class Game {
     }
 
     context.strokeText(`Your score is ${score}`, beginX, beginY + 10);
+    const hscore = document.getElementById('highestScore');
+    hscore.innerHTML = Math.max(this.prevScore, this.score);
   }
 }
 

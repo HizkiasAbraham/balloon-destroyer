@@ -18,16 +18,16 @@ function initialezeGameControl() {
     setCanvasBackground('bg3');
   });
   let game;
-
+  let prevScore = 0;
   startGame.addEventListener('click', () => {
     if (!game) {
-      game = new Game(DIFFICULTIES[gameLevel.value]);
+      game = new Game(DIFFICULTIES[gameLevel.value], prevScore);
       document.body.addEventListener('keydown', (e) => {
         game.onKeyEntered(e.key);
       });
       game.run();
     } else if (game.gameEnded) {
-      game = new Game(DIFFICULTIES[gameLevel.value]);
+      game = new Game(DIFFICULTIES[gameLevel.value], prevScore);
       document.body.addEventListener('keydown', (e) => {
         game.onKeyEntered(e.key);
       });
