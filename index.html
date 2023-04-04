@@ -15,13 +15,28 @@
     </div>
     <div class="container">
       <div class="container-left">
-        <div style="width: 100%;">
+        <div style="width: 100%">
           <h3 class="text-center">Game control</h3>
           <hr />
-          <p>Score: <span style="font-size: 2em; color: green;" id="score"></span></p>
-          <p>Lives: <span style="font-size: 2em; color: rgb(99, 99, 89);" id="lives"></span></p>
+          <p>
+            Score: <span style="font-size: 2em; color: green" id="score"></span>
+          </p>
+          <p>
+            Lives:
+            <span
+              style="font-size: 2em; color: rgb(99, 99, 89)"
+              id="lives"
+            ></span>
+          </p>
           <p>Change game background:</p>
           <div class="flex-div">
+            <div class="flex-div-item hoverable">
+              <img
+                class="change-background-img"
+                src="./dist/images/1.jpg"
+                id="bg1"
+              />
+            </div>
             <div class="flex-div-item hoverable">
               <img
                 class="change-background-img"
@@ -40,21 +55,14 @@
 
           <div>
             <p>Game level:</p>
-            <select name="" id="">
-              <option value="easy">Easy</option>
-              <option value="medium">Medium</option>
-              <option value="hard">Hard</option>
+            <select id="gameLevel">
+              <option value="EASY" selected>Easy</option>
+              <option value="MEDIUM">Medium</option>
+              <option value="HARD">Hard</option>
             </select>
           </div>
-          <div style="margin-top: 8%;">
-            <button class="btn primary">
-              Start Game
-            </button>
-          </div>
-          <div style="margin-top: 8%;">
-            <button class="btn danger">
-              Stop Game
-            </button>
+          <div style="margin-top: 8%">
+            <button id="startGame" class="btn primary">Start Game</button>
           </div>
         </div>
       </div>

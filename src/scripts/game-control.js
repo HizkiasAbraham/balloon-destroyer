@@ -1,20 +1,43 @@
+import { DIFFICULTIES } from './constants';
+import { Game } from './game';
+
 function initialezeGameControl() {
-  // const bg1 = document.getElementById('bg1');
+  const bg1 = document.getElementById('bg1');
   const bg2 = document.getElementById('bg2');
   const bg3 = document.getElementById('bg3');
+  const startGame = document.getElementById('startGame');
+  const gameLevel = document.getElementById('gameLevel');
 
-  // bg1.addEventListener('click', () => {
-  //   setCanvasBackground('bg1');
-  // });
+  bg1.addEventListener('click', () => {
+    setCanvasBackground('bg1');
+  });
   bg2.addEventListener('click', () => {
     setCanvasBackground('bg2');
   });
   bg3.addEventListener('click', () => {
     setCanvasBackground('bg3');
   });
+  let game;
+
+  startGame.addEventListener('click', () => {
+    if (!game) {
+      game = new Game(DIFFICULTIES[gameLevel.value]);
+      document.body.addEventListener('keydown', (e) => {
+        game.onKeyEntered(e.key);
+      });
+      game.run();
+    } else if (game.gameEnded) {
+      game = new Game(DIFFICULTIES[gameLevel.value]);
+      document.body.addEventListener('keydown', (e) => {
+        game.onKeyEntered(e.key);
+      });
+      game.run();
+    } else {
+      alert('Game in progress!');
+    }
+  });
 
   setCanvasBackground('bg2');
-  // runingRect();
 }
 
 function setCanvasBackground(image) {
