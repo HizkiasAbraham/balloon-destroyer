@@ -8,6 +8,7 @@ import {
   NUMBER_OF_LIVES,
   WORD_LETTERS,
 } from './constants';
+import CharacterImage from '../images/character.png';
 
 export class Game {
   constructor(difficulty) {
@@ -84,7 +85,7 @@ export class Game {
     if (indexOfKey != -1) {
       this.balloons.splice(indexOfKey, 1);
       this.score += 10;
-      this.setLivesAndScores()
+      this.setLivesAndScores();
     }
   }
 
@@ -106,6 +107,16 @@ export class Game {
       const balloon = new Balloon(value, x, y, this.balloons.length);
       this.balloons.push(balloon);
     }
+  }
+
+  drawImage(img, x, y, w, h) {
+    const { context } = this;
+    const image = new Image();
+    image.src = img;
+
+    image.onload = () => {
+      context.drawImage(image, x, y, w, h);
+    };
   }
 }
 
