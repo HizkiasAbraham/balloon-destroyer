@@ -8,7 +8,6 @@ import {
   NUMBER_OF_LIVES,
   WORD_LETTERS,
 } from './constants';
-import CharacterImage from '../images/character.png';
 
 export class Game {
   constructor(difficulty) {
@@ -79,10 +78,17 @@ export class Game {
   }
 
   onKeyEntered(keyValue) {
+    const { context: ctx, canvas } = this;
     const indexOfKey = this.balloons.findIndex(
       (e) => e.value.toLowerCase() === keyValue && e.isVisible(),
     );
     if (indexOfKey != -1) {
+      const balloon = this.balloons[indexOfKey];
+      const [balloonX, balloonY] = balloon.getPosition();
+      ctx.beginPath();
+      ctx.moveTo(30, 122);
+      ctx.lineTo(balloonX, balloonY);
+      ctx.stroke();
       this.balloons.splice(indexOfKey, 1);
       this.score += 10;
       this.setLivesAndScores();
