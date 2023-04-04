@@ -38,7 +38,7 @@ export class Game {
       await sleep(100);
       this.time += 100;
     }
-    console.log('LIVES, TIME', this.lives, this.time);
+    this.finishGame();
   }
 
   drawBalloons() {
@@ -123,6 +123,25 @@ export class Game {
     image.onload = () => {
       context.drawImage(image, x, y, w, h);
     };
+  }
+
+  finishGame() {
+    const { lives, score, canvas, context } = this;
+    const { width, height } = canvas;
+
+    context.clearRect(0, 0, width, height);
+    context.fillStyle = 'grey';
+    context.fillRect(0, 0, width, height);
+    const beginX = width / 2 - width / 8;
+    const beginY = height / 2 - height / 8;
+
+    if (!lives) {
+      context.fillStyle = 'white';
+      context.font = '12px';
+      context.strokeText('Game Over! 0 Lives', beginX, beginY);
+    }
+
+    context.strokeText(`Your score is ${score}`, beginX, beginY + 10);
   }
 }
 
