@@ -130,14 +130,12 @@ export class Game {
     const { width, height } = canvas;
 
     context.clearRect(0, 0, width, height);
-    context.fillStyle = 'grey';
+    context.fillStyle = 'white';
     context.fillRect(0, 0, width, height);
     const beginX = width / 2 - width / 8;
     const beginY = height / 2 - height / 8;
 
     if (!lives) {
-      context.fillStyle = 'white';
-      context.font = '12px';
       context.strokeText('Game Over! 0 Lives', beginX, beginY);
     }
 
