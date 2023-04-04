@@ -24,12 +24,14 @@ function initialezeGameControl() {
       game = new Game(DIFFICULTIES[gameLevel.value], prevScore);
       document.body.addEventListener('keydown', (e) => {
         game.onKeyEntered(e.key);
+        prevScore = game.score;
       });
       game.run();
     } else if (game.gameEnded) {
       game = new Game(DIFFICULTIES[gameLevel.value], prevScore);
       document.body.addEventListener('keydown', (e) => {
         game.onKeyEntered(e.key);
+        prevScore = game.score;
       });
       game.run();
     } else {

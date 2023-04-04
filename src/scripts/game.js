@@ -11,6 +11,7 @@ import {
 
 export class Game {
   constructor(difficulty, prevScore) {
+    console.log('prev score is', prevScore);
     this.lives = NUMBER_OF_LIVES;
     this.time = 0;
     this.score = 0;
@@ -95,6 +96,10 @@ export class Game {
       this.score += 10;
       this.setLivesAndScores();
     }
+  }
+
+  getScore() {
+    return this.score;
   }
 
   generateBalloons() {

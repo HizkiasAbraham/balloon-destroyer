@@ -1,7 +1,7 @@
 export const DIFFICULTIES = {
-  EASY: 0.5,
-  MEDIUM: 0.9,
-  HARD: 1.4,
+  EASY: 2,
+  MEDIUM: 4,
+  HARD: 6,
 };
 
 export const NUMBER_OF_BALLOONS = 5;
