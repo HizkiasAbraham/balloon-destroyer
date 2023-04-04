@@ -17,6 +17,7 @@ export class Game {
     this.balloons = [];
     this.difficulty = difficulty;
     this.escaped = [];
+    this.gameEnded = false;
 
     const canvas = document.getElementById('game_canvas');
     const context = canvas.getContext('2d');
@@ -38,6 +39,7 @@ export class Game {
       await sleep(100);
       this.time += 100;
     }
+    this.gameEnded = true
     this.finishGame();
   }
 
