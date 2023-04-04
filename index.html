@@ -15,11 +15,11 @@
     </div>
     <div class="container">
       <div class="container-left">
-        <div>
+        <div style="width: 100%;">
           <h3 class="text-center">Game control</h3>
           <hr />
-          <p>Score: <span id="score"></span></p>
-          <p>Lives: <span id="lives"></span></p>
+          <p>Score: <span style="font-size: 2em; color: green;" id="score"></span></p>
+          <p>Lives: <span style="font-size: 2em; color: rgb(99, 99, 89);" id="lives"></span></p>
           <p>Change game background:</p>
           <div class="flex-div">
             <div class="flex-div-item hoverable">
@@ -45,6 +45,16 @@
               <option value="medium">Medium</option>
               <option value="hard">Hard</option>
             </select>
+          </div>
+          <div style="margin-top: 8%;">
+            <button class="btn primary">
+              Start Game
+            </button>
+          </div>
+          <div style="margin-top: 8%;">
+            <button class="btn danger">
+              Stop Game
+            </button>
           </div>
         </div>
       </div>
