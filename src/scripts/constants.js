@@ -1,13 +1,13 @@
 export const DIFFICULTIES = {
-  EASY: 2,
-  MEDIUM: 4,
-  HARD: 6,
+  EASY: 20,
+  MEDIUM: 40,
+  HARD: 60,
 };
 
 export const NUMBER_OF_BALLOONS = 5;
-export const BALLOON_RADIUS = 6;
+export const BALLOON_RADIUS = 90;
 export const BALLOON_FILL_COLOR = 'yellow';
-export const BALLOON_TEXT_FONT = '0.6em Georgia';
+export const BALLOON_TEXT_FONT = '9em Georgia';
 export const BALLOON_TEXT_FILL_COLOR = 'red';
 export const NUMBER_OF_LIVES = 5;
 

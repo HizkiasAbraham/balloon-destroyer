@@ -1,5 +1,6 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const ImageminPlugin = require('imagemin-webpack-plugin').default;
 
 const config = {
   entry: [
@@ -9,9 +10,9 @@ const config = {
   output: {
     path: path.join(__dirname, 'dist'),
     filename: '[name].js',
-    assetModuleFilename: 'images/[name][ext]'
+    assetModuleFilename: 'images/[name][ext]',
   },
-  plugins: [new MiniCssExtractPlugin()],
+  plugins: [new MiniCssExtractPlugin(), new ImageminPlugin()],
   module: {
     rules: [
       {

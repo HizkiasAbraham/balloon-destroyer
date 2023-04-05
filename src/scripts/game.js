@@ -137,16 +137,17 @@ export class Game {
     const { width, height } = canvas;
 
     context.clearRect(0, 0, width, height);
-    context.fillStyle = 'white';
-    context.fillRect(0, 0, width, height);
     const beginX = width / 2 - width / 8;
     const beginY = height / 2 - height / 8;
+    context.fillStyle = 'white';
+    context.fillRect(beginX - 100, beginY - 200, 1500, 400);
 
+    context.fillStyle = 'black';
     if (!lives) {
-      context.strokeText('Game Over! 0 Lives', beginX, beginY);
+      context.fillText('Game Over! 0 Lives', beginX, beginY);
     }
 
-    context.strokeText(`Your score is ${score}`, beginX, beginY + 10);
+    context.fillText(`Your score is ${score}`, beginX, beginY + 140);
     const hscore = document.getElementById('highestScore');
     hscore.innerHTML = Math.max(this.prevScore, this.score);
   }
