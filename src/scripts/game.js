@@ -89,7 +89,8 @@ export class Game {
       const balloon = this.balloons[indexOfKey];
       const [balloonX, balloonY] = balloon.getPosition();
       ctx.beginPath();
-      ctx.moveTo(30, 122);
+      ctx.moveTo(0, canvas.height);
+      ctx.lineWidth = 10;
       ctx.lineTo(balloonX, balloonY);
       ctx.stroke();
       this.balloons.splice(indexOfKey, 1);
@@ -145,6 +146,8 @@ export class Game {
     context.fillStyle = 'black';
     if (!lives) {
       context.fillText('Game Over! 0 Lives', beginX, beginY);
+    } else {
+      context.fillText(`Game Over! ${lives} Lives`, beginX, beginY);
     }
 
     context.fillText(`Your score is ${score}`, beginX, beginY + 140);

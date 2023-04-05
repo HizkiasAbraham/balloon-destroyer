@@ -18,7 +18,19 @@
         <div style="width: 100%">
           <h3 class="text-center">Game control</h3>
           <hr />
-          <p>Change game background:</p>
+          <p>Select game hero:</p>
+          <div class="flex-div">
+            <div class="flex-div-item hoverable">
+              <img id="ch-1" class="change-hero" src="./dist/images/ch-1.png" />
+            </div>
+            <div class="flex-div-item hoverable">
+              <img id="ch-2" class="change-hero" src="./dist/images/ch-2.png" />
+            </div>
+            <div class="flex-div-item hoverable">
+              <img id="ch-3" class="change-hero" src="./dist/images/ch-3.png" />
+            </div>
+          </div>
+          <p>Select game background:</p>
           <div class="flex-div">
             <div class="flex-div-item hoverable">
               <img
@@ -44,7 +56,7 @@
           </div>
 
           <div>
-            <p>Game level:</p>
+            <p>Select Game level:</p>
             <select id="gameLevel">
               <option value="EASY" selected>Easy</option>
               <option value="MEDIUM">Medium</option>
@@ -61,12 +73,10 @@
           Highest Score:
           <span id="highestScore">0</span>
         </p>
-        <p style="color: aqua">
-          Score: <span style="color: green" id="score"></span>
-        </p>
+        <p style="color: aqua">Score: <span id="score">0</span></p>
         <p style="color: aqua">
           Lives:
-          <span style="color: rgb(99, 99, 89)" id="lives"></span>
+          <span id="lives">5</span>
         </p>
       </div>
       <div id="canvas_container" class="container-right bg1">
@@ -75,9 +85,9 @@
       <div>
         <img
           id="characterImg"
-          height="180"
+          height="160"
           width="140"
-          src="./dist/images/character.png"
+          src="./dist/images/ch-2.png"
           alt=""
         />
       </div>

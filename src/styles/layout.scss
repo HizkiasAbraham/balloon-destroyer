@@ -35,6 +35,11 @@
   width: 50px;
 }
 
+.change-hero {
+  height: 50px;
+  width: 50px;
+}
+
 .hoverable {
   cursor: pointer;
 }
@@ -109,9 +114,9 @@ select {
 }
 
 #characterImg {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 0;
-  margin-left: 18%;
+  margin-left: 20%;
   margin-bottom: 4%;
 }
