@@ -14,9 +14,12 @@ This app was developed using `html`, `css` and `javascript`. In addition, `webpa
 
 - Drawing balloons on canvas: The program takes list of balloon class objects and then loops over the balloons list to draw the most recent position of each balloon.
 
+- Challenge: The pixel size for the canvas was very small (300x150), thus I had issue with rendering balloons with high quality.
+
+- Solution: I added the pixel size and dimension of the canvas to have better look with good pixel resolution appealing to eye
+
 Below is a snippet of code from repository
 ```javacript
-
  drawBalloons() {
     const { context, canvas } = this;
     const { height } = canvas;
