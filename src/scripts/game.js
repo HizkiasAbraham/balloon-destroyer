@@ -89,7 +89,7 @@ export class Game {
       const balloon = this.balloons[indexOfKey];
       const [balloonX, balloonY] = balloon.getPosition();
       ctx.beginPath();
-      ctx.moveTo(0, canvas.height);
+      ctx.moveTo(200, canvas.height);
       ctx.lineWidth = 10;
       ctx.lineTo(balloonX, balloonY);
       ctx.stroke();
