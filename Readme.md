@@ -86,3 +86,23 @@ function setGameHero(image) {
   characterImage.setAttribute('src', './dist/images/' + image + '.png');
 }
 ```
+
+### 3) Destroying balloon if a character is entered from keyboard
+
+The feature in a game of destroying a balloon inside with text when the same key value is entered from keyboard would allow the player to enter a specific key into their keyboard which, when pressed, will destroy the balloon in the canvas. This feature adds an element of interactivity to the game and it is the core feature of the game that challenges the user where user is required to enter the keyboard characters as fast as possible and collect more scores. Additionally, it can also add another layer of challenge as the player may have to enter the correct key in order to progress.
+
+#### Challenge
+
+The challenge with this feature is that it requires the player to be very precise and to enter the key as quickly as possible. This can be difficult for some players and may require practice in order to improve their scores. Additionally, the key value needs to be chosen carefully to ensure that it does not overlap with other commands and does not prevent the player from continuing the game. Finally, there may be necessary constraints for the game such as difficulty levels that need to be considered to provide an enjoyable gaming experience.
+
+#### Solution
+
+The user waits for the ballons enter to atmospher and becomes visible. Then, I added event listner to the game body to listen for the key entered. When the user enters the matching key, I delete the respective ballon from array of ballons created and the change is reflected in the canvas. In addition, a user can choose from levels of difficulties from game control `EASY`, `MEDIUM` and `HARD` and challenge them selves with the balloon step shift. Below is the snippet of the code that controls how these levels affect the step each balloon moves down at each frame.
+
+```javascript
+export const DIFFICULTIES = {
+  EASY: 20,
+  MEDIUM: 40,
+  HARD: 60,
+};
+```
