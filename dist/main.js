@@ -16,7 +16,7 @@
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _images_1_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images/1.jpg */ \"./src/images/1.jpg\");\n/* harmony import */ var _images_2_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images/2.jpg */ \"./src/images/2.jpg\");\n/* harmony import */ var _images_3_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./images/3.jpg */ \"./src/images/3.jpg\");\n/* harmony import */ var _images_ch_1_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./images/ch-1.png */ \"./src/images/ch-1.png\");\n/* harmony import */ var _images_ch_2_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./images/ch-2.png */ \"./src/images/ch-2.png\");\n/* harmony import */ var _images_ch_3_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./images/ch-3.png */ \"./src/images/ch-3.png\");\n/* harmony import */ var _scripts_game_control__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./scripts/game-control */ \"./src/scripts/game-control.js\");\n\n\n\n\n\n\n\ndocument.addEventListener('DOMContentLoaded', function () {\n  (0,_scripts_game_control__WEBPACK_IMPORTED_MODULE_6__.initialezeGameControl)();\n});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvaW5kZXguanMuanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7QUFBd0I7QUFDQTtBQUNBO0FBQ0c7QUFDQTtBQUNBO0FBRW9DO0FBRS9EQyxRQUFRLENBQUNDLGdCQUFnQixDQUFDLGtCQUFrQixFQUFFLFlBQVk7RUFDeERGLDRFQUFxQixFQUFFO0FBQ3pCLENBQUMsQ0FBQyIsInNvdXJjZXMiOlsid2VicGFjazovL2JhbGxvb24tZGVzdHJveWVyLy4vc3JjL2luZGV4LmpzP2I2MzUiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0ICcuL2ltYWdlcy8xLmpwZyc7XG5pbXBvcnQgJy4vaW1hZ2VzLzIuanBnJztcbmltcG9ydCAnLi9pbWFnZXMvMy5qcGcnO1xuaW1wb3J0ICcuL2ltYWdlcy9jaC0xLnBuZyc7XG5pbXBvcnQgJy4vaW1hZ2VzL2NoLTIucG5nJztcbmltcG9ydCAnLi9pbWFnZXMvY2gtMy5wbmcnO1xuXG5pbXBvcnQgeyBpbml0aWFsZXplR2FtZUNvbnRyb2wgfSBmcm9tICcuL3NjcmlwdHMvZ2FtZS1jb250cm9sJztcblxuZG9jdW1lbnQuYWRkRXZlbnRMaXN0ZW5lcignRE9NQ29udGVudExvYWRlZCcsIGZ1bmN0aW9uICgpIHtcbiAgaW5pdGlhbGV6ZUdhbWVDb250cm9sKCk7XG59KTtcbiJdLCJuYW1lcyI6WyJpbml0aWFsZXplR2FtZUNvbnRyb2wiLCJkb2N1bWVudCIsImFkZEV2ZW50TGlzdGVuZXIiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/index.js\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _images_1_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images/1.jpg */ \"./src/images/1.jpg\");\n/* harmony import */ var _images_2_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images/2.jpg */ \"./src/images/2.jpg\");\n/* harmony import */ var _images_3_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./images/3.jpg */ \"./src/images/3.jpg\");\n/* harmony import */ var _images_ch_1_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./images/ch-1.png */ \"./src/images/ch-1.png\");\n/* harmony import */ var _images_ch_2_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./images/ch-2.png */ \"./src/images/ch-2.png\");\n/* harmony import */ var _images_ch_3_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./images/ch-3.png */ \"./src/images/ch-3.png\");\n/* harmony import */ var _images_linkedin_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./images/linkedin.png */ \"./src/images/linkedin.png\");\n/* harmony import */ var _images_github_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./images/github.png */ \"./src/images/github.png\");\n/* harmony import */ var _scripts_game_control__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./scripts/game-control */ \"./src/scripts/game-control.js\");\n\n\n\n\n\n\n\n\n\ndocument.addEventListener('DOMContentLoaded', function () {\n  (0,_scripts_game_control__WEBPACK_IMPORTED_MODULE_8__.initialezeGameControl)();\n});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvaW5kZXguanMuanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7OztBQUF3QjtBQUNBO0FBQ0E7QUFDRztBQUNBO0FBQ0E7QUFDSTtBQUNGO0FBRWtDO0FBRS9EQyxRQUFRLENBQUNDLGdCQUFnQixDQUFDLGtCQUFrQixFQUFFLFlBQVk7RUFDeERGLDRFQUFxQixFQUFFO0FBQ3pCLENBQUMsQ0FBQyIsInNvdXJjZXMiOlsid2VicGFjazovL2JhbGxvb24tZGVzdHJveWVyLy4vc3JjL2luZGV4LmpzP2I2MzUiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0ICcuL2ltYWdlcy8xLmpwZyc7XG5pbXBvcnQgJy4vaW1hZ2VzLzIuanBnJztcbmltcG9ydCAnLi9pbWFnZXMvMy5qcGcnO1xuaW1wb3J0ICcuL2ltYWdlcy9jaC0xLnBuZyc7XG5pbXBvcnQgJy4vaW1hZ2VzL2NoLTIucG5nJztcbmltcG9ydCAnLi9pbWFnZXMvY2gtMy5wbmcnO1xuaW1wb3J0ICcuL2ltYWdlcy9saW5rZWRpbi5wbmcnO1xuaW1wb3J0ICcuL2ltYWdlcy9naXRodWIucG5nJztcblxuaW1wb3J0IHsgaW5pdGlhbGV6ZUdhbWVDb250cm9sIH0gZnJvbSAnLi9zY3JpcHRzL2dhbWUtY29udHJvbCc7XG5cbmRvY3VtZW50LmFkZEV2ZW50TGlzdGVuZXIoJ0RPTUNvbnRlbnRMb2FkZWQnLCBmdW5jdGlvbiAoKSB7XG4gIGluaXRpYWxlemVHYW1lQ29udHJvbCgpO1xufSk7XG4iXSwibmFtZXMiOlsiaW5pdGlhbGV6ZUdhbWVDb250cm9sIiwiZG9jdW1lbnQiLCJhZGRFdmVudExpc3RlbmVyIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/index.js\n");
 
 /***/ }),
 
@@ -2225,6 +2225,28 @@ module.exports = __webpack_require__.p + "images/ch-2.png";
 
 "use strict";
 module.exports = __webpack_require__.p + "images/ch-3.png";
+
+/***/ }),
+
+/***/ "./src/images/github.png":
+/*!*******************************!*\
+  !*** ./src/images/github.png ***!
+  \*******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/github.png";
+
+/***/ }),
+
+/***/ "./src/images/linkedin.png":
+/*!*********************************!*\
+  !*** ./src/images/linkedin.png ***!
+  \*********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/linkedin.png";
 
 /***/ })
 
