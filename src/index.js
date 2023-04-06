@@ -6,6 +6,7 @@ import './images/ch-2.png';
 import './images/ch-3.png';
 import './images/linkedin.png';
 import './images/github.png';
+import './images/favicon.png'
 
 import { initialezeGameControl } from './scripts/game-control';
 
